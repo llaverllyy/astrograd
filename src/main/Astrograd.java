@@ -98,12 +98,12 @@ public class Astrograd {
                             break;
 
                         default:
-                            logger.log(Level.WARNING, "Неизвестный тип события " + eventType);
+                            logger.log(Level.WARNING, "Неизвестный тип события: " + eventType);
                     }
                 } catch (NumberFormatException e) {
-                    logger.log(Level.WARNING, "Некорректный формат данных " + line);
+                    logger.log(Level.WARNING, "Некорректный формат данных: " + line);
                 } catch (IllegalArgumentException e) {
-                    logger.log(Level.WARNING, "Недостаточно данных " + line);
+                    logger.log(Level.WARNING, "Недостаточно данных: " + line);
                 }
             }
         } catch (Exception e) {
